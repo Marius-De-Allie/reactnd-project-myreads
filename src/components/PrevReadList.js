@@ -15,3 +15,5 @@ const PrevReadList = props => {
     </div>
   );
 };
+
+export default PrevReadList;
