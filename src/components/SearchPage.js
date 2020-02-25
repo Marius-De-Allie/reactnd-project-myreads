@@ -2,6 +2,8 @@ import React from 'react';
 
 const SearchPage = props => (
   <div className="search-books">
-    SearchPage Comp
+    <div className="search-books-bar">
+      SearchPage Comp
+    </div>
   </div>
 );
