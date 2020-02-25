@@ -15,3 +15,5 @@ const CurrentReadList = props => {
     </div>
   );
 };
+
+export default CurrentReadList;
