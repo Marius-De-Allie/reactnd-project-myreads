@@ -1,5 +1,7 @@
 import React from 'react';
 
-const SearchPage = props => {
-  
-};
+const SearchPage = props => (
+  <div className="search-books">
+    SearchPage Comp
+  </div>
+);
