@@ -7,3 +7,5 @@ const SearchPage = props => (
     </div>
   </div>
 );
+
+export default SearchPage;
