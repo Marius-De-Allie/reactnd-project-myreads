@@ -15,3 +15,5 @@ const FutureReadList = props => {
     </div>
   );
 };
+
+export default FutureReadList;
