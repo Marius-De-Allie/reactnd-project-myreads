@@ -5,7 +5,7 @@ import SearchInput from './SearchInput';
 const SearchPage = props => (
   <div className="search-books">
     <div className="search-books-bar">
-      <SearchInput />
+      <SearchInput searchSubmit={props.searchSubmit} />
     </div>
   </div>
 );
