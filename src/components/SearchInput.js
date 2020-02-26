@@ -5,3 +5,5 @@ const SearchInput = props => (
     <input type="text" placeholder="Search by title or author"/>
   </div>
 );
+
+export default SearchInput;
