@@ -12,14 +12,19 @@ class BooksApp extends React.Component {
      * pages, as well as provide a good URL they can bookmark and share.
      */
     books: [],
+    searchResults: [],
     showSearchPae: false
   }
   // Function for making Async search request to BooksAPI.
   searchSubmit = async(query) => {
     const searchResults = await BooksAPI.search(query);
-    console.log(searchResults);
+    // console.log(searchResults);
+    this.setState((prevState) => ({
+      searchResults /*: [...prevState.searchResults, searchResults] */
+    }));
+    console.log(this.state.searchResults);
   };
-
+  
   render() {
     return (
       <div className="app">
