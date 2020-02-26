@@ -4,6 +4,13 @@ class SearchInput extends React.Component {
   state = {
     searchTerm: ''
   };
+  search = (evt) => {
+    let searchTerm = evt.target.value;
+    this.props.searchSubmit(searchTerm);
+    this.setState(() => ({
+      searchTerm
+    }))
+  };
   render() {
     return (
       <div className="search-books-input-wrapper">
