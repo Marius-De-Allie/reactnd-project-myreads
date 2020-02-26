@@ -1,6 +1,7 @@
 import React from 'react'
 // import * as BooksAPI from './BooksAPI'
 import './App.css'
+import SearchPage from './components/SearchPage'
 
 class BooksApp extends React.Component {
   state = {
@@ -10,13 +11,15 @@ class BooksApp extends React.Component {
      * users can use the browser's back and forward buttons to navigate between
      * pages, as well as provide a good URL they can bookmark and share.
      */
-    showSearchPage: false
+    books: [],
+    showSearchPae: false
   }
 
   render() {
     return (
       <div className="app">
-        {this.state.showSearchPage ? (
+        <SearchPage />
+        {/*{this.state.showSearchPage ? (
           <div className="search-books">
             <div className="search-books-bar">
               <button className="close-search" onClick={() => this.setState({ showSearchPage: false })}>Close</button>
@@ -29,7 +32,7 @@ class BooksApp extends React.Component {
                   However, remember that the BooksAPI.search method DOES search by title or author. So, don't worry if
                   you don't find a specific author or title. Every search is limited by search terms.
                 */}
-                <input type="text" placeholder="Search by title or author"/>
+                {/*<input type="text" placeholder="Search by title or author"/>
 
               </div>
             </div>
@@ -197,7 +200,7 @@ class BooksApp extends React.Component {
               <button onClick={() => this.setState({ showSearchPage: true })}>Add a book</button>
             </div>
           </div>
-        )}
+        )}*/}
       </div>
     )
   }
