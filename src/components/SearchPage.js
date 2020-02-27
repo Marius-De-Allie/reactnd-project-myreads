@@ -9,7 +9,10 @@ const SearchPage = props => (
     <div className="search-books-bar">
       <SearchInput searchSubmit={props.searchSubmit} />
     </div>
-    <BookList className="search-books-results"/>
+    <BookList 
+      className="search-books-results" 
+      searchResults={props.searchResults}
+    />
   </div>
 );
 
