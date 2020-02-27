@@ -7,6 +7,7 @@ const BookList = props => {
     props.searchResults.map(book => 
     <BookItem 
       title={book.title}
+      author={book.authors}
     />)
     : <p>No results please try another search term</p>;
   return (
