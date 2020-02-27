@@ -2,6 +2,7 @@ import React from 'react'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 import SearchPage from './components/SearchPage'
+import Header from './src/components/Header';
 
 class BooksApp extends React.Component {
   state = {
@@ -24,7 +25,7 @@ class BooksApp extends React.Component {
     }));
     console.log(this.state.searchResults);
   };
-  
+
   render() {
     return (
       <div className="app">
