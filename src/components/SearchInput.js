@@ -6,10 +6,12 @@ class SearchInput extends React.Component {
   };
   search = (evt) => {
     let searchTerm = evt.target.value.trim();
-    this.props.searchSubmit(searchTerm);
     this.setState(() => ({
       searchTerm
     }))
+    if(searchTerm !== '') {
+      this.props.searchSubmit(searchTerm);
+    }
   };
   render() {
     return (
