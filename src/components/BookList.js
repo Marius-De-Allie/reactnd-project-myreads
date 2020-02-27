@@ -5,6 +5,9 @@ import BookItem from './BookItem';
 const BookList = props => (
   <div className={props.className}>
     <ol className="books-grid">
+      {props.searchResults.map(book => {
+        return <BookItem {...book} />
+      })}
     </ol>
   </div>
 );
