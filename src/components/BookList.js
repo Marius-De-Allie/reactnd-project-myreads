@@ -3,9 +3,9 @@ import React from 'react';
 import BookItem from './BookItem';
 
 const BookList = props => {
-  const book = props.searchResults ?  
+  const book = props.searchResults.error !== 'empty query' ?  
     props.searchResults.map(book => <BookItem />)
-    : <p>Please enter a valid search term to begin</p>;
+    : <p>No results please try another search term</p>;
   return (
     <div className={props.className}>
       <ol className="books-grid">
