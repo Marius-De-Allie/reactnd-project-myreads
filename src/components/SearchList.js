@@ -20,4 +20,4 @@ const SearchList = props => {
   );
 };
 
-export default BookList;
+export default SearchList;
