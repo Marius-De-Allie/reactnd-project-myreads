@@ -8,6 +8,7 @@ const BookList = props => {
     <BookItem 
       title={book.title}
       author={book.authors}
+      imageURL={book.imageLinks.thumbnail}
     />)
     : <p>No results please try another search term</p>;
   return (
