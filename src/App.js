@@ -2,7 +2,7 @@ import React from 'react'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 import SearchPage from './components/SearchPage'
-import Header from './src/components/Header';
+import Header from '../src/components/Header';
 
 class BooksApp extends React.Component {
   state = {
