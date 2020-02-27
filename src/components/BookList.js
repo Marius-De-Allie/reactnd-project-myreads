@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BookList = props => (
-  <div className="bookshelf-books">
+  <div className={props.className}>
     <ol className="books-grid">
     </ol>
   </div>
