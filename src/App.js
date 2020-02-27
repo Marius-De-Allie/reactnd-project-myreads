@@ -28,7 +28,10 @@ class BooksApp extends React.Component {
   render() {
     return (
       <div className="app">
-        <SearchPage searchSubmit={this.searchSubmit} />
+        <SearchPage 
+          searchSubmit={this.searchSubmit} 
+          searchResults={this.state.searchResults} 
+        />
         {/*{this.state.showSearchPage ? (
           <div className="search-books">
             <div className="search-books-bar">
