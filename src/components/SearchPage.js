@@ -8,8 +8,8 @@ const SearchPage = props => (
   <div className="search-books">
     <div className="search-books-bar">
       <SearchInput searchSubmit={props.searchSubmit} />
-
     </div>
+    <BookList />
   </div>
 );
 
