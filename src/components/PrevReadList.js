@@ -2,7 +2,6 @@ import React from 'react';
 
 const PrevReadList = props => {
   return (
-    <div className="list-books-content">
       <div>
         <div className="bookshelf">
           <h2 className="bookshelf-title">Book Shelf Title</h2>
@@ -12,7 +11,6 @@ const PrevReadList = props => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
