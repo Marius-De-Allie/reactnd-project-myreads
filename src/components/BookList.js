@@ -6,3 +6,5 @@ const BookList = props => (
     </ol>
   </div>
 );
+
+export default BookList;
