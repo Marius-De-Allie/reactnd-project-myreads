@@ -9,3 +9,5 @@ const BookList = props => {
     </div>
   );
 };
+
+export default BookList;
