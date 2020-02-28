@@ -7,7 +7,7 @@ const MainPage = props => {
   return (
     <div className="list-books">
       <div className="list-books-content">
-        <CurrentReadList />
+        <CurrentReadList books={props.books} />
         <FutureReadList />
         <PrevReadList />
       </div>
