@@ -7,7 +7,9 @@ const MainPage = props => {
     <div className="list-books">
       <div className="list-books-content">
         <CurrentReadList />
+        <FutureReadList />
       </div>
     </div>
   );
 };
+
