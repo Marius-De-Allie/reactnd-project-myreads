@@ -3,6 +3,7 @@ import * as BooksAPI from './BooksAPI'
 import './App.css'
 import SearchPage from './components/SearchPage'
 import Header from '../src/components/Header';
+import MainPage from './components/MainPage';
 
 class BooksApp extends React.Component {
   state = {
@@ -33,12 +34,12 @@ class BooksApp extends React.Component {
   }
   render() {
     return (
-      <div className="app">
+      {/*<div className="app">
         <SearchPage 
           searchSubmit={this.searchSubmit} 
           searchResults={this.state.searchResults} 
         />
-        {/*{this.state.showSearchPage ? (
+        {this.state.showSearchPage ? (
           <div className="search-books">
             <div className="search-books-bar">
               <button className="close-search" onClick={() => this.setState({ showSearchPage: false })}>Close</button>
