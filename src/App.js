@@ -34,12 +34,13 @@ class BooksApp extends React.Component {
   }
   render() {
     return (
-      {/*<div className="app">
-        <SearchPage 
+      <div className="app">
+        <MainPage />
+        {/*<SearchPage 
           searchSubmit={this.searchSubmit} 
           searchResults={this.state.searchResults} 
-        />
-        {this.state.showSearchPage ? (
+        />*/}
+        {/*{this.state.showSearchPage ? (
           <div className="search-books">
             <div className="search-books-bar">
               <button className="close-search" onClick={() => this.setState({ showSearchPage: false })}>Close</button>
