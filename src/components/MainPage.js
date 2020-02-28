@@ -3,17 +3,24 @@ import CurrentReadList from './CurrentReadList';
 import FutureReadList from './FutureReadList';
 import PrevReadList from './PrevReadList';
 
-const MainPage = ({books}) => {
-  let bookshelfBooks;
-  return (
-    <div className="list-books">
-      <div className="list-books-content">
-        <CurrentReadList books={props.books} />
-        <FutureReadList />
-        <PrevReadList />
+class MainPage extends React.Component {
+  constructor(props) {
+    super(props);
+    
+  }
+
+  render() {
+    let bookshelfBooks;
+    return (
+      <div className="list-books">
+        <div className="list-books-content">
+          <CurrentReadList books={this.props.books} />
+          <FutureReadList />
+          <PrevReadList />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default MainPage;
