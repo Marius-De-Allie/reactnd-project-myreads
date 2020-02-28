@@ -6,7 +6,11 @@ import PrevReadList from './PrevReadList';
 class MainPage extends React.Component {
   constructor(props) {
     super(props);
-    
+    this.state = {
+      currRead: [],
+      prevRead: [],
+      futureRead: []
+    }
   }
 
   render() {
