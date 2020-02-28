@@ -4,6 +4,7 @@ import FutureReadList from './FutureReadList';
 import PrevReadList from './PrevReadList';
 
 const MainPage = props => {
+  let bookshelfBooks;
   return (
     <div className="list-books">
       <div className="list-books-content">
