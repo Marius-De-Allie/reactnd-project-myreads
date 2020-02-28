@@ -1,5 +1,5 @@
 import React from 'react';
-import Booklist from './BookList';
+import BookList from './BookList';
 
 const PrevReadList = props => {
   return (
