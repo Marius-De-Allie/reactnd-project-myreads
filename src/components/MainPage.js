@@ -3,7 +3,7 @@ import CurrentReadList from './CurrentReadList';
 import FutureReadList from './FutureReadList';
 import PrevReadList from './PrevReadList';
 
-const MainPage = props => {
+const MainPage = ({books}) => {
   let bookshelfBooks;
   return (
     <div className="list-books">
