@@ -24,7 +24,7 @@ class BooksApp extends React.Component {
     this.setState((prevState) => ({
       searchResults /*: [...prevState.searchResults, searchResults] */
     }));
-    console.log(this.state.searchResults);
+    // console.log(this.state.searchResults);
   };
   async componentDidMount() {
     const myBooks = await BooksAPI.getAll();
