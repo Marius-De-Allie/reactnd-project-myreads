@@ -1,7 +1,7 @@
 import React from 'react';
 import BookList from './BookList';
 
-const CurrentReadList = props => {
+const CurrentReadList = ({books}) => {
   return (
       <div>
         <div className="bookshelf">
