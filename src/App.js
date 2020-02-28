@@ -25,7 +25,9 @@ class BooksApp extends React.Component {
     }));
     console.log(this.state.searchResults);
   };
-
+  async componentDidMount() {
+    const myBooks = await BooksAPI.getAll();
+  }
   render() {
     return (
       <div className="app">
