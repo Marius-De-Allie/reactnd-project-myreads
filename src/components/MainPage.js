@@ -1,6 +1,7 @@
 import React from 'react';
 import CurrentReadList from './CurrentReadList';
 import FutureReadList from './FutureReadList';
+import PrevReadList from './PrevReadList';
 
 const MainPage = props => {
   return (
