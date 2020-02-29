@@ -6,7 +6,7 @@ const PrevReadList = ({previousBooks}) => {
       <div>
         <div className="bookshelf">
           <h2 className="bookshelf-title">Book Shelf Title</h2>
-          <BookList />
+          <BookList previousReads={previousBooks} />
         </div>
       </div>
   );
