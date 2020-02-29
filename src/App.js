@@ -26,7 +26,7 @@ class BooksApp extends React.Component {
     }));
     // console.log(this.state.searchResults);
   };
-  async componentDidMount() {
+  async componentWillMount() {
     const myBooks = await BooksAPI.getAll();
     this.setState(() => ({
       books: myBooks
