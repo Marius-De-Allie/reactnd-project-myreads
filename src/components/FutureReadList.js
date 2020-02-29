@@ -1,7 +1,7 @@
 import React from 'react';
 import BookList from './BookList';
 
-const FutureReadList = props => {
+const FutureReadList = ({futureBooks}) => {
   return (
       <div>
         <div className="bookshelf">
