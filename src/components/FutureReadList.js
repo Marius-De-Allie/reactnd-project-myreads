@@ -6,7 +6,7 @@ const FutureReadList = ({futureBooks}) => {
       <div>
         <div className="bookshelf">
           <h2 className="bookshelf-title">Book Shelf Title</h2>
-          <BookList />
+          <BookList futureReads={futureBooks} />
         </div>
       </div>
   );
