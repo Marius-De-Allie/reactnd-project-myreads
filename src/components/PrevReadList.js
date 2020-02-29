@@ -1,7 +1,7 @@
 import React from 'react';
 import BookList from './BookList';
 
-const PrevReadList = props => {
+const PrevReadList = ({previousBooks}) => {
   return (
       <div>
         <div className="bookshelf">
