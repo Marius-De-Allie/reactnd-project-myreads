@@ -12,13 +12,13 @@ class MainPage extends React.Component {
       futureRead: []
     }
   }
-  
   render() {
+    const currentBooks = this.props.books.filter(book => book.shelf === 'currentlyReading');
     let bookshelfBooks;
     return (
       <div className="list-books">
         <div className="list-books-content">
-          <CurrentReadList books={this.state.currRead} />
+          <CurrentReadList current={current} />
           <FutureReadList />
           <PrevReadList />
         </div>
