@@ -1,9 +1,8 @@
 import React from 'react';
 import BookList from './BookList';
 
-const CurrentReadList = ({books}) => {
-  const currRead = books.filter(book => book.shelf === 'currentlyReading');
-  console.log(currRead);
+const CurrentReadList = ({currentBooks}) => {
+  console.log(currentBooks);
   return (
       <div>
         <div className="bookshelf">
