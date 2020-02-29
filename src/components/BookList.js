@@ -14,10 +14,18 @@ const BookList = props => {
   } else if(props.futureReads !== undefined) {
     books = props.futureReads.map(book => 
       <BookItem
-      key={book.id}
-      title={book.title}
-      author={book.authors}
-      imageURL={book.imageLinks.thumbnail}
+        key={book.id}
+        title={book.title}
+        author={book.authors}
+        imageURL={book.imageLinks.thumbnail}
+      />)
+  } else if(props.previousReads !== undefined) {
+    books = props.previousReads.map(book => 
+      <BookItem
+        key={book.id}
+        title={book.title}
+        author={book.authors}
+        imageURL={book.imageLinks.thumbnail}
       />)
   }
   return (
