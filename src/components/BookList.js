@@ -10,6 +10,7 @@ const BookList = props => {
       title={book.title}
       author={book.authors}
       imageURL={book.imageLinks.thumbnail}
+      shelf={book.shelf}
     />);
   } else if(props.futureReads !== undefined) {
     books = props.futureReads.map(book => 
@@ -18,6 +19,7 @@ const BookList = props => {
         title={book.title}
         author={book.authors}
         imageURL={book.imageLinks.thumbnail}
+        shelf={book.shelf}
       />)
   } else if(props.previousReads !== undefined) {
     books = props.previousReads.map(book => 
@@ -26,6 +28,7 @@ const BookList = props => {
         title={book.title}
         author={book.authors}
         imageURL={book.imageLinks.thumbnail}
+        shelf={book.shelf}
       />)
   }
   return (
