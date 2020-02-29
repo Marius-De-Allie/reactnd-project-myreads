@@ -7,7 +7,7 @@ const CurrentReadList = ({currentBooks}) => {
       <div>
         <div className="bookshelf">
           <h2 className="bookshelf-title">Book Shelf Title</h2>
-          <BookList currentlyReading={currRead} />
+          <BookList currentlyReading={currentBooks} />
         </div>
       </div>
   );
