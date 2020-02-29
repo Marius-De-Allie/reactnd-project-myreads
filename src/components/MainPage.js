@@ -13,7 +13,10 @@ class MainPage extends React.Component {
     }
   }
   render() {
+    console.log(this.props.books);
+    // Filter books list down to only books that have shelf prop value of 'currentlyReading'.
     const currentBooks = this.props.books.filter(book => book.shelf === 'currentlyReading');
+    const futureBooks = this.props.books.filter(book => book.shelf === 'wantToRead');
     let bookshelfBooks;
     return (
       <div className="list-books">
