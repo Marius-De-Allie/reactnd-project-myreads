@@ -18,7 +18,7 @@ class MainPage extends React.Component {
     return (
       <div className="list-books">
         <div className="list-books-content">
-          <CurrentReadList current={current} />
+          <CurrentReadList currentBooks={currentBooks} />
           <FutureReadList />
           <PrevReadList />
         </div>
