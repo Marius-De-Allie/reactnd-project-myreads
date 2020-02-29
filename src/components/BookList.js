@@ -11,6 +11,14 @@ const BookList = props => {
       author={book.authors}
       imageURL={book.imageLinks.thumbnail}
     />);
+  } else if(props.futureReads !== undefined) {
+    books = props.futureReads.map(book => 
+      <BookItem
+      key={book.id}
+      title={book.title}
+      author={book.authors}
+      imageURL={book.imageLinks.thumbnail}
+      />)
   }
   return (
     <div className="bookshelf-books">
