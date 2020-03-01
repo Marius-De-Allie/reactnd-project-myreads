@@ -3,7 +3,7 @@ import React from 'react';
 const BookShelfChanger = props => {
   return (
     <div className="book-shelf-changer">
-      <select>
+      <select value={props.shelf}>
         <option value="move" disabled>Move to...</option>
         <option value="currentlyReading">Currently Reading</option>
         <option value="wantToRead">Want to Read</option>
