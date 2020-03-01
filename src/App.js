@@ -26,6 +26,10 @@ class BooksApp extends React.Component {
     }));
     // console.log(this.state.searchResults);
   };
+  // Function for moving book from one shelf to another.
+  changeShelf = async (book, shelf) => {
+    console.log(`book: ${book} shelf: ${shelf}`);
+  };
   async componentWillMount() {
     const myBooks = await BooksAPI.getAll();
     this.setState(() => ({
