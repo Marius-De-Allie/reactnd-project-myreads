@@ -36,14 +36,12 @@ class BooksApp extends React.Component {
   render() {
     return (
       <div className="app">
-        <MainPage 
+        {/*<MainPage 
           books={this.state.books}
           changeShelf={this.changeShelf}
-        />
-        {/*<SearchPage 
-          searchSubmit={this.searchSubmit} 
-          searchResults={this.state.searchResults} 
         />*/}
+        <SearchPage 
+        />
         {/*{this.state.showSearchPage ? (
           <div className="search-books">
             <div className="search-books-bar">
