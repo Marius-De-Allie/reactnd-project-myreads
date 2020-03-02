@@ -18,7 +18,7 @@ const SearchList = (props) => {
       return book;
   };
   return (
-    <div className={this.props.className}>
+    <div className={props.className}>
       <ol className="books-grid">
         {renderResults()}
       </ol>
