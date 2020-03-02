@@ -3,13 +3,10 @@ import * as BooksAPI from '../BooksAPI';
 // IMPORT BOOK ITEM COMPONENT INTO BOOKLIST.
 import BookItem from './BookItem';
 
-class SearchList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const SearchList = (props) => {
   renderResults = () => {
-    const book = this.state.searchResults.error !== 'empty query' ? 
-    this.state.searchResults.map(result => 
+    const book = props.searchResult.error !== 'empty query' ? 
+    props.searchResult.map(result => 
       <BookItem
         key={result.id} 
         title={result.title}
@@ -18,19 +15,21 @@ class SearchList extends React.Component {
         shelf={result.shelf}
         id={result.id}
       />) : 
-      <p>No results pleae try another search term</p>; 
+      <p>No results please try another search term</p>; 
       return book;
   };
-  render() {
-    return (
-      <div className={this.props.className}>
-        <ol className="books-grid">
-          {this.renderResults()}
-        </ol>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={this.props.className}>
+      <ol className="books-grid">
+        {renderResults()}
+      </ol>
+    </div>
+  );
+};
+
+
+
+
 
 export default SearchList;
 
