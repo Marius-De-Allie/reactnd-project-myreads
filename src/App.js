@@ -31,6 +31,8 @@ class BooksApp extends React.Component {
     console.log(`book: ${book} shelf: ${shelf}`);
     // Update selected book's shelf property to value selected from select list ('currentlyReading', 'wantToRead', 'read' or 'none').
     await BooksAPI.update(book, shelf);
+    // Return array of books after shelf property has been updated on selected books.
+    const newBooks = await BooksAPI.getAll();
   };
   async componentWillMount() {
     const myBooks = await BooksAPI.getAll();
