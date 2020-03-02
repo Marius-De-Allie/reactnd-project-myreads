@@ -6,8 +6,23 @@ import SearchList from './SearchList';
 
 class SearchPage extends React.Component {
   state = {
-    searchResults: []
+    searchResult: []
   }
+  // Function for making Async search request to BooksAPI.
+  searchSubmit = async(query) => {
+    const searchResult = await BooksAPI.search(query);
+    // Check whether serach result array exists.
+    if(searchResult.error !== 'empty query') {
+      // Loop through search results and add shelf property to each result object. 
+      searchResult.forEach(result => result.shelf = '');
+      // Set searchResult state to value returned from call to BooksAPI.search async function.
+      this.setState(() => ({
+        searchResult
+      }));
+    }
+    console.log(searchResult);
+    // console.log(this.state.searchResults);
+  };
   render() {
     return (
       <div className="search-books">
