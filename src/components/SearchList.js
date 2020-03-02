@@ -41,7 +41,7 @@ class SearchList extends React.Component {
   };
   render() {
     return (
-      <div className={props.className}>
+      <div className={this.props.className}>
         <ol className="books-grid">
           {book}
         </ol>
