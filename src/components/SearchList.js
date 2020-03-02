@@ -9,6 +9,12 @@ class SearchList extends React.Component {
       searchResults: []
     }
   }
+  // Function for making Async search request to BooksAPI.
+  searchSubmit = async(query) => {
+    const searchResults = await BooksAPI.search(query);
+    // console.log(searchResults);
+    // console.log(this.state.searchResults);
+  };
   render() {
     return (
       <div className={props.className}>

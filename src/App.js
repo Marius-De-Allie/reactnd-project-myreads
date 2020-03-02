@@ -15,15 +15,6 @@ class BooksApp extends React.Component {
      */
     books: []
   }
-  // Function for making Async search request to BooksAPI.
-  searchSubmit = async(query) => {
-    const searchResults = await BooksAPI.search(query);
-    // console.log(searchResults);
-    this.setState((prevState) => ({
-      searchResults /*: [...prevState.searchResults, searchResults] */
-    }));
-    // console.log(this.state.searchResults);
-  };
   // Function for moving book from one shelf to another.
   changeShelf = async(book, shelf) => {
     console.log(`book: ${book} shelf: ${shelf}`);
