@@ -1,5 +1,5 @@
 import React from 'react';
-import BooksAPI from '../BooksAPI';
+import * as BooksAPI from '../BooksAPI';
 // IMPORT BOOK ITEM COMPONENT INTO BOOKLIST.
 import BookItem from './BookItem';
 
@@ -43,7 +43,7 @@ class SearchList extends React.Component {
     return (
       <div className={this.props.className}>
         <ol className="books-grid">
-          {book}
+          {this.renderResults()}
         </ol>
       </div>
     );
