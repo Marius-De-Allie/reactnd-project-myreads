@@ -6,9 +6,6 @@ import BookItem from './BookItem';
 class SearchList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      searchResults: []
-    }
   }
   // Function for making Async search request to BooksAPI.
   searchSubmit = async(query) => {

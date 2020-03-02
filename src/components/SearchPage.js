@@ -5,6 +5,9 @@ import SearchInput from './SearchInput';
 import SearchList from './SearchList';
 
 class SearchPage extends React.Component {
+  state = {
+    searchResults: []
+  }
   render() {
     return (
       <div className="search-books">
