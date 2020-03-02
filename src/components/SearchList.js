@@ -21,7 +21,18 @@ class SearchList extends React.Component {
     // console.log(this.state.searchResults);
   };
   renderResults = () => {
-    
+    const book = this.state.searchResults.error !== 'empty query' ? 
+    this.state.searchResults.map(result => 
+      <BookItem
+        key={result.id} 
+        title={result.title}
+        author={result.authors}
+        imageURL={result.imageLinks.thumbnail}
+        shelf={result.shelf}
+        id={result.id}
+      />) : 
+      <p>No results pleae try another search term</p>; 
+      return book;
   };
   render() {
     return (
@@ -33,16 +44,6 @@ class SearchList extends React.Component {
     );
   }
 }
-// = props => {
-//   const book = props.searchResults.error !== 'empty query' ?  
-//     props.searchResults.map(book => 
-//     <BookItem 
-//       title={book.title}
-//       author={book.authors}
-//       imageURL={book.imageLinks.thumbnail}
-//     />)
-//     : <p>No results please try another search term</p>;
-// };
 
 export default SearchList;
 
