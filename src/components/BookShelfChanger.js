@@ -5,6 +5,8 @@ const BookShelfChanger = props => {
   onShelfChange = (evt, book, shelf) => {
     // return currently selected value from select list element.
     const shelfValue = evt.target.value;
+    // Call changeShelf function located in BookApp parent component.
+    props.changeShelf(props.book, shelfValue);
   };
   return (
     <div className="book-shelf-changer">
