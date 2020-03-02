@@ -33,6 +33,10 @@ class BooksApp extends React.Component {
     await BooksAPI.update(book, shelf);
     // Return array of books after shelf property has been updated on selected books.
     const newBooks = await BooksAPI.getAll();
+    // Update component state books property to value of newBooks.
+    this.setState(() => ({
+      books: newBooks
+    }));
   };
   async componentWillMount() {
     const myBooks = await BooksAPI.getAll();
