@@ -1,6 +1,6 @@
 import React from 'react';
-// IMPORT BOOK ITEM COMPONENT INTO BOOKLIST.
-import BookItem from './BookItem';
+// IMPORT SEARCHBOOKITEM COMPONENT INTO SEARCHLIST.
+import SearchBookItem from './SearchBookItem';
 
 const SearchList = (props) => {
   renderResults = () => {
