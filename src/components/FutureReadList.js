@@ -1,12 +1,12 @@
 import React from 'react';
 import BookList from './BookList';
 
-const FutureReadList = ({futureBooks}) => {
+const FutureReadList = ({futureBooks, changeShelf}) => {
   return (
       <div>
         <div className="bookshelf">
           <h2 className="bookshelf-title">Book Shelf Title</h2>
-          <BookList futureReads={futureBooks} />
+          <BookList futureReads={futureBooks} changeShelf={changeShelf} />
         </div>
       </div>
   );
