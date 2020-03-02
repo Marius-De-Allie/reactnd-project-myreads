@@ -1,7 +1,8 @@
 import React from 'react';
+import * as BooksAPI from '../BooksAPI';
 // IMPORT SEARCH INPUT COMPONENT INTO SEARCH PAGE
 import SearchInput from './SearchInput';
-// IMPORT BOOK LIST COMPONENT INTO SEARCH PAGE.
+// IMPORT SEARCH LIST COMPONENT INTO SEARCH PAGE.
 import SearchList from './SearchList';
 
 class SearchPage extends React.Component {
