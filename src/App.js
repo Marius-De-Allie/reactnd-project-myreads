@@ -13,9 +13,7 @@ class BooksApp extends React.Component {
      * users can use the browser's back and forward buttons to navigate between
      * pages, as well as provide a good URL they can bookmark and share.
      */
-    books: [],
-    searchResults: [],
-    showSearchPae: false
+    books: []
   }
   // Function for making Async search request to BooksAPI.
   searchSubmit = async(query) => {
