@@ -3,7 +3,7 @@ import React from 'react';
 import SearchBookItem from './SearchBookItem';
 
 const SearchList = (props) => {
-  renderResults = () => {
+  const renderResults = () => {
     const book = props.searchResult.error !== 'empty query' ? 
     props.searchResult.map(result => 
       <SearchBookItem
