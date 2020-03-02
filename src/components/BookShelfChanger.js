@@ -1,8 +1,10 @@
 import React from 'react';
 
 const BookShelfChanger = props => {
+  // Function to execute upon select list change.
   onShelfChange = (evt, book, shelf) => {
-
+    // return currently selected value from select list element.
+    const shelfValue = evt.target.value;
   };
   return (
     <div className="book-shelf-changer">
