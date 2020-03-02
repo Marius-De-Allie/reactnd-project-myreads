@@ -6,7 +6,7 @@ const SearchList = (props) => {
   renderResults = () => {
     const book = props.searchResult.error !== 'empty query' ? 
     props.searchResult.map(result => 
-      <BookItem
+      <SearchBookItem
         key={result.id} 
         title={result.title}
         author={result.authors}
