@@ -32,7 +32,7 @@ class SearchPage extends React.Component {
         </div>
         <SearchList 
           className="search-books-results" 
-          searchResults={props.searchResults}
+          searchResult={this.state.searchResult}
         />
       </div>
     );
