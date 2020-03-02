@@ -4,16 +4,20 @@ import SearchInput from './SearchInput';
 // IMPORT BOOK LIST COMPONENT INTO SEARCH PAGE.
 import SearchList from './SearchList';
 
-const SearchPage = props => (
-  <div className="search-books">
-    <div className="search-books-bar">
-      <SearchInput searchSubmit={props.searchSubmit} />
-    </div>
-    <SearchList 
-      className="search-books-results" 
-      searchResults={props.searchResults}
-    />
-  </div>
-);
+class SearchPage extends React.Component {
+  render() {
+    return (
+      <div className="search-books">
+        <div className="search-books-bar">
+          <SearchInput searchSubmit={props.searchSubmit} />
+        </div>
+        <SearchList 
+          className="search-books-results" 
+          searchResults={props.searchResults}
+        />
+      </div>
+    );
+  }
+};
 
 export default SearchPage;
