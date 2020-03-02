@@ -1,5 +1,4 @@
 import React from 'react';
-import * as BooksAPI from '../BooksAPI';
 // IMPORT BOOK ITEM COMPONENT INTO BOOKLIST.
 import BookItem from './BookItem';
 
@@ -26,10 +25,6 @@ const SearchList = (props) => {
     </div>
   );
 };
-
-
-
-
 
 export default SearchList;
 
