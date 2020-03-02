@@ -12,6 +12,7 @@ const BookList = props => {
       imageURL={book.imageLinks.thumbnail}
       shelf={book.shelf}
       changeShelf={props.changeShelf}
+      book={book}
     />);
   } else if(props.futureReads !== undefined) {
     books = props.futureReads.map(book => 
@@ -22,6 +23,7 @@ const BookList = props => {
         imageURL={book.imageLinks.thumbnail}
         shelf={book.shelf}
         changeShelf={props.changeShelf}
+        book={book}
       />)
   } else if(props.previousReads !== undefined) {
     books = props.previousReads.map(book => 
@@ -32,6 +34,7 @@ const BookList = props => {
         imageURL={book.imageLinks.thumbnail}
         shelf={book.shelf}
         changeShelf={props.changeShelf}
+        book={book}
       />)
   }
   return (
