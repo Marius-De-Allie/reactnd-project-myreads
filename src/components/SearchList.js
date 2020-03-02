@@ -20,6 +20,9 @@ class SearchList extends React.Component {
     console.log(searchResult);
     // console.log(this.state.searchResults);
   };
+  renderResults = () => {
+    
+  };
   render() {
     return (
       <div className={props.className}>
