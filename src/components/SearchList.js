@@ -7,21 +7,6 @@ class SearchList extends React.Component {
   constructor(props) {
     super(props);
   }
-  // Function for making Async search request to BooksAPI.
-  searchSubmit = async(query) => {
-    const searchResult = await BooksAPI.search(query);
-    // Check whether serach result array exists.
-    if(searchResult.error !== 'empty query') {
-      // Loop through search results and add shelf property to each result object. 
-      searchResult.forEach(result => result.shelf = '');
-      // Set searchResult state to value returned from call to BooksAPI.search async function.
-      this.setState(() => ({
-        searchResult
-      }));
-    }
-    console.log(searchResult);
-    // console.log(this.state.searchResults);
-  };
   renderResults = () => {
     const book = this.state.searchResults.error !== 'empty query' ? 
     this.state.searchResults.map(result => 
