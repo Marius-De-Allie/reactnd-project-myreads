@@ -1,6 +1,9 @@
 import React from 'react';
 
 const BookShelfChanger = props => {
+  onShelfChange = (evt, book, shelf) => {
+
+  };
   return (
     <div className="book-shelf-changer">
       <select value={props.shelf}>
