@@ -5,6 +5,9 @@ import BookItem from './BookItem';
 class SearchList extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      searchResults: []
+    }
   }
   render() {
     return (
