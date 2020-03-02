@@ -11,6 +11,7 @@ const BookItem = props => {
             <BookShelfChanger 
               shelf={props.shelf} 
               changeShelf={props.changeShelf} 
+              book={props.book}
             />
           </div>
   <div className="book-title">{props.title}</div>
