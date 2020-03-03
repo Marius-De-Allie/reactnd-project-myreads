@@ -40,17 +40,16 @@ class BooksApp extends React.Component {
         <Switch>
           {/*Main page route */}
           <Route path="/" exact render={() => <MainPage 
-              books={this.state.books}
-              changeShelf={this.changeShelf}
-            />} 
+            books={this.state.books}
+            changeShelf={this.changeShelf}
+          />} 
           />
-          <Route path="/search" />
-
+          <Route path="/search" render={() => <SearchPage
+            books={this.state.books}
+            changeShelfSearch={this.changeShelf}
+          />} 
+          />
         </Switch>
-        <SearchPage
-          books={this.state.books}
-          changeShelfSearch={this.changeShelf}
-        />
         {/*{this.state.showSearchPage ? (
           <div className="search-books">
             <div className="search-books-bar">
