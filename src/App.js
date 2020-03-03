@@ -38,7 +38,9 @@ class BooksApp extends React.Component {
     return (
       <div className="app">
         <Switch>
-        
+          {/*Main page route */}
+          <Route path="/" />
+
         </Switch>
         <MainPage 
           books={this.state.books}
