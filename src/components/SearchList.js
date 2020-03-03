@@ -14,6 +14,7 @@ const SearchList = (props) => {
         shelf={result.shelf}
         id={result.id}
         books={props.books}
+        result={result}
       />) : 
       <p>No results please try another search term</p>; 
       return book;
