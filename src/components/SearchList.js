@@ -13,6 +13,7 @@ const SearchList = (props) => {
         imageURL={result.imageLinks.thumbnail}
         shelf={result.shelf}
         id={result.id}
+        books={props.books}
       />) : 
       <p>No results please try another search term</p>; 
       return book;
