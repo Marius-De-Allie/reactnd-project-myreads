@@ -2,6 +2,7 @@ import React from 'react';
 import CurrentReadList from './CurrentReadList';
 import FutureReadList from './FutureReadList';
 import PrevReadList from './PrevReadList';
+import Header from './Header';
 
 class MainPage extends React.Component {
   constructor(props) {
