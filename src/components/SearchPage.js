@@ -15,7 +15,7 @@ class SearchPage extends React.Component {
     // Check whether serach result array exists.
     if(searchResult.error !== 'empty query') {
       // Loop through search results and add shelf property to each result object. 
-      searchResult.forEach(result => result.shelf = '');
+      searchResult.forEach(result => result.shelf = 'none');
       // Set searchResult state to value returned from call to BooksAPI.search async function.
       this.setState(() => ({
         searchResult
