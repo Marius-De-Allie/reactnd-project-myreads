@@ -39,13 +39,13 @@ class BooksApp extends React.Component {
       <div className="app">
         <Switch>
           {/*Main page route */}
-          <Route path="/" exact />
+          <Route path="/" exact render={() => <MainPage 
+              books={this.state.books}
+              changeShelf={this.changeShelf}
+            />} 
+          />
 
         </Switch>
-        <MainPage 
-          books={this.state.books}
-          changeShelf={this.changeShelf}
-        />
         <SearchPage
           books={this.state.books}
           changeShelfSearch={this.changeShelf}
