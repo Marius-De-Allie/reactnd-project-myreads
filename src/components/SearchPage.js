@@ -21,7 +21,7 @@ class SearchPage extends React.Component {
         searchResult
       }));
     }
-    console.log(searchResult);
+    // console.log(searchResult);
     // console.log(this.state.searchResults);
   };
   render() {
@@ -33,6 +33,7 @@ class SearchPage extends React.Component {
         <SearchList 
           className="search-books-results" 
           searchResult={this.state.searchResult}
+          books={this.props.books}
         />
       </div>
     );
