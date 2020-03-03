@@ -44,7 +44,7 @@ class BooksApp extends React.Component {
               changeShelf={this.changeShelf}
             />} 
           />
-          <Route />
+          <Route path="/search" />
 
         </Switch>
         <SearchPage
