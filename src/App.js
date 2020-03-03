@@ -39,7 +39,7 @@ class BooksApp extends React.Component {
       <div className="app">
         <Switch>
           {/*Main page route */}
-          <Route path="/" />
+          <Route path="/" exact />
 
         </Switch>
         <MainPage 
