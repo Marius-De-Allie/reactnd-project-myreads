@@ -34,6 +34,7 @@ class SearchPage extends React.Component {
           className="search-books-results" 
           searchResult={this.state.searchResult}
           books={this.props.books}
+          changeShelfSearch={this.props.changeShelfSearch}
         />
       </div>
     );
