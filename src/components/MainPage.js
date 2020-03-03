@@ -3,6 +3,7 @@ import CurrentReadList from './CurrentReadList';
 import FutureReadList from './FutureReadList';
 import PrevReadList from './PrevReadList';
 import Header from './Header';
+import AddBookBtn from './AddBookBtn';
 
 class MainPage extends React.Component {
   constructor(props) {
