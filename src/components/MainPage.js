@@ -31,6 +31,7 @@ class MainPage extends React.Component {
           <FutureReadList futureBooks={futureBooks} changeShelf={this.props.changeShelf} />
           <PrevReadList previousBooks={previousBooks} changeShelf={this.props.changeShelf} />
         </div>
+        <AddBookBtn />
       </div>
     );
   }
