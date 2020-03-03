@@ -7,3 +7,5 @@ const AddBookBtn = () => {
     </div>
   );
 };
+
+export default AddBookBtn;
