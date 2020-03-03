@@ -1,6 +1,10 @@
 import React from 'react';
 
 const SearchBookShelfChanger = props => {
+  const onShelfChange = (evt) => {
+    const shelfValue = evt.target.value.trim();
+    props.changeShelfSearch(props.result.id, shelfValue);
+  };
   return (
     <div className="book-shelf-changer">
       <select>
