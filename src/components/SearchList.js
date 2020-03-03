@@ -15,6 +15,7 @@ const SearchList = (props) => {
         id={result.id}
         books={props.books}
         result={result}
+        changeShelfSearch={props.changeShelfSearch}
       />) : 
       <p>No results please try another search term</p>; 
       return book;
