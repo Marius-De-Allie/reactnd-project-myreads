@@ -19,4 +19,4 @@ const SearchBookShelfChanger = props => {
   );
 };
 
-export default SearchBookShelfChanger;
+export default withRouter(SearchBookShelfChanger);
