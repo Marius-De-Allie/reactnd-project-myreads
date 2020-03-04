@@ -64,7 +64,7 @@ class SearchPage extends React.Component {
           searchResult={this.state.searchResult}
           books={this.props.books}
           changeShelfSearch={this.props.changeShelfSearch}
-          error={this.state.error}
+          errorMessage={this.state.error}
         />
       </div>
     );
