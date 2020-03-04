@@ -5,8 +5,6 @@ const SearchBookShelfChanger = props => {
   const onShelfChange = (evt) => {
     const shelfValue = evt.target.value;
     props.changeShelfSearch(props.result, shelfValue);
-    // Redirect to the main page.
-    props.history.push('/');
   };
   return (
     <div className="book-shelf-changer">
