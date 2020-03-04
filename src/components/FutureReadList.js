@@ -1,11 +1,11 @@
 import React from 'react';
 import BookList from './BookList';
 
-const FutureReadList = ({futureBooks, changeShelf}) => {
+const FutureReadList = ({futureBooks, changeShelf, title}) => {
   return (
       <div>
         <div className="bookshelf">
-          <h2 className="bookshelf-title">Book Shelf Title</h2>
+          <h2 className="bookshelf-title">{title}</h2>
           <BookList futureReads={futureBooks} changeShelf={changeShelf} />
         </div>
       </div>
