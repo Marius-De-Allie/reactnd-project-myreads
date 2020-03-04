@@ -28,8 +28,8 @@ class MainPage extends React.Component {
         <Header />
         <div className="list-books-content">
           <CurrentReadList currentBooks={currentBooks} changeShelf={this.props.changeShelf} title="Currently Reading" />
-          <FutureReadList futureBooks={futureBooks} changeShelf={this.props.changeShelf} title="Read" />
-          <PrevReadList previousBooks={previousBooks} changeShelf={this.props.changeShelf} />
+          <FutureReadList futureBooks={futureBooks} changeShelf={this.props.changeShelf} title="Want to Read" />
+          <PrevReadList previousBooks={previousBooks} changeShelf={this.props.changeShelf} title="Read" />
         </div>
         <AddBookBtn />
       </div>
