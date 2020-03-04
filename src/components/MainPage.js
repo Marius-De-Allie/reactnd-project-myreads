@@ -4,7 +4,7 @@ import FutureReadList from './FutureReadList';
 import PrevReadList from './PrevReadList';
 import Header from './Header';
 import AddBookBtn from './AddBookBtn';
-
+// Will convert this to stateless fn component during refactor as state is not being saved in this component.
 class MainPage extends React.Component {
   constructor(props) {
     super(props);
@@ -22,7 +22,6 @@ class MainPage extends React.Component {
     const futureBooks = this.props.books.filter(book => book.shelf === 'wantToRead');
     // Filter books list down to only books that have shelf prop value of 'read'.
     const previousBooks = this.props.books.filter(book => book.shelf === 'read');
-    let bookshelfBooks;
     return (
       <div className="list-books">
         <Header />

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 // IMPORT SEARCH BOOKSHELF CHANGER COMPONENT TO BE RENDERED IN SEARCHBOOKITEM COMPONENT.
 import SearchBookShelfChanger from './SearchBookShelfChanger';
 
