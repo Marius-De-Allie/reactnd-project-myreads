@@ -17,7 +17,7 @@ const SearchList = (props) => {
         result={result}
         changeShelfSearch={props.changeShelfSearch}
       />) : 
-      <p>No results please try another search term</p>; 
+      <p>{props.errorMessage}</p>; 
       return book;
   };
   return (
