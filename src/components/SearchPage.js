@@ -9,7 +9,8 @@ import CloseSearchBtn from './CloseSearchBtn';
 
 class SearchPage extends React.Component {
   state = {
-    searchResult: []
+    searchResult: [],
+    error: undefined
   }
   // Function for making Async search request to BooksAPI.
   searchSubmit = async(query) => {
