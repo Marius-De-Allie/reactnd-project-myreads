@@ -5,7 +5,7 @@ import SearchInput from './SearchInput';
 // IMPORT SEARCH LIST COMPONENT INTO SEARCH PAGE.
 import SearchList from './SearchList';
 // IMPORT CLOSE SEARCH BTN COMPONENT INTO SEARCH PAGE.
-import closeSearchBtn from './CloseSearchBtn';
+import CloseSearchBtn from './CloseSearchBtn';
 
 class SearchPage extends React.Component {
   state = {
@@ -30,6 +30,7 @@ class SearchPage extends React.Component {
     return (
       <div className="search-books">
         <div className="search-books-bar">
+          <CloseSearchBtn />
           <SearchInput searchSubmit={this.searchSubmit} />
         </div>
         <SearchList 
