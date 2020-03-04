@@ -37,7 +37,10 @@ class SearchPage extends React.Component {
       <div className="search-books">
         <div className="search-books-bar">
           <CloseSearchBtn />
-          <SearchInput searchSubmit={this.searchSubmit} />
+          <SearchInput 
+            searchSubmit={this.searchSubmit} 
+            clearSearch={this.clearSearch}
+          />
         </div>
         <SearchList 
           className="search-books-results" 
