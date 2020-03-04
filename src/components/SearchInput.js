@@ -11,6 +11,10 @@ class SearchInput extends React.Component {
     }))
     if(searchTerm !== '') {
       this.props.searchSubmit(searchTerm);
+      // Check whether search input field is empty.
+    } else if(searchTerm === '' || searchTerm.length <= 0) {
+      // Clear search results from searchResult state prop.
+      this.props.clearSearch(searchTerm);
     }
   };
   render() {
