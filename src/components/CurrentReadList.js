@@ -6,7 +6,7 @@ const CurrentReadList = ({currentBooks, changeShelf}) => {
   return (
       <div>
         <div className="bookshelf">
-          <h2 className="bookshelf-title">Book Shelf Title</h2>
+  <h2 className="bookshelf-title">Book Shelf Title</h2>
           <BookList currentlyReading={currentBooks} changeShelf={changeShelf} />
         </div>
       </div>

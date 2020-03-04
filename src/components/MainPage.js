@@ -27,7 +27,7 @@ class MainPage extends React.Component {
       <div className="list-books">
         <Header />
         <div className="list-books-content">
-          <CurrentReadList currentBooks={currentBooks} changeShelf={this.props.changeShelf} />
+          <CurrentReadList currentBooks={currentBooks} changeShelf={this.props.changeShelf} title="Currently Reading" />
           <FutureReadList futureBooks={futureBooks} changeShelf={this.props.changeShelf} />
           <PrevReadList previousBooks={previousBooks} changeShelf={this.props.changeShelf} />
         </div>

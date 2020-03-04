@@ -9,7 +9,7 @@ const BookList = props => {
       key={book.id}
       title={book.title}
       author={book.authors && book.authors}
-      imageURL={book.imageLinks && book.imageLinks}
+      imageURL={book.imageLinks && book.imageLinks.thumbnail}
       shelf={book.shelf}
       changeShelf={props.changeShelf}
       book={book}
@@ -20,7 +20,7 @@ const BookList = props => {
         key={book.id}
         title={book.title}
         author={book.authors && book.authors}
-        imageURL={book.imageLinks && book.imageLinks}
+        imageURL={book.imageLinks && book.imageLinks.thumbnail}
         shelf={book.shelf}
         changeShelf={props.changeShelf}
         book={book}
@@ -31,7 +31,7 @@ const BookList = props => {
         key={book.id}
         title={book.title}
         author={book.authors && book.authors}
-        imageURL={book.imageLinks && book.imageLinks}
+        imageURL={book.imageLinks && book.imageLinks.thumbnail}
         shelf={book.shelf}
         changeShelf={props.changeShelf}
         book={book}
