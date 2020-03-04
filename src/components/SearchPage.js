@@ -46,7 +46,8 @@ class SearchPage extends React.Component {
   // Function to clear searchResults state prop when serach input field is empty.
   clearSearch = (query) => {
     this.setState(() => ({
-      searchResult: []
+      searchResult: [],
+      error: undefined
     }))
   };
   render() {

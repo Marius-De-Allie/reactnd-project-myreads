@@ -4,7 +4,7 @@ import SearchBookItem from './SearchBookItem';
 
 const SearchList = (props) => {
   const renderResults = () => {
-    const book = props.searchResult.error !== 'empty query' ? 
+    const book = props.searchResult.length > 0 ? 
     props.searchResult.map(result => 
       <SearchBookItem
         key={result.id} 
