@@ -10,7 +10,7 @@ const SearchList = (props) => {
         key={result.id} 
         title={result.title}
         author={result.authors}
-        imageURL={result.imageLinks.thumbnail}
+        imageURL={result.imageLinks && result.imageLinks.thumbnail}
         shelf={result.shelf}
         id={result.id}
         books={props.books}
