@@ -5,7 +5,7 @@ class SearchInput extends React.Component {
     searchTerm: ''
   };
   search = (evt) => {
-    let searchTerm = evt.target.value.trim();
+    let searchTerm = evt.target.value.trimStart();
     this.setState(() => ({
       searchTerm
     }))
