@@ -1,11 +1,11 @@
 import React from 'react';
 import BookList from './BookList';
 
-const PrevReadList = ({previousBooks, changeShelf}) => {
+const PrevReadList = ({previousBooks, changeShelf, title}) => {
   return (
       <div>
         <div className="bookshelf">
-          <h2 className="bookshelf-title">Book Shelf Title</h2>
+          <h2 className="bookshelf-title">{title}</h2>
           <BookList previousReads={previousBooks} changeShelf={changeShelf} />
         </div>
       </div>
