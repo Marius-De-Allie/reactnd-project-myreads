@@ -7,7 +7,9 @@ const AddBookBtn = () => {
   };
   return (
     <div className="open-search">
-      <button>Add a book</button>
+      <Link>
+        <button>Add a book</button>
+      </Link>
     </div>
   );
 };
