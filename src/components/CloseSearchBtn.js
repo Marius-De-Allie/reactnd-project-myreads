@@ -8,3 +8,5 @@ const CloseSearchBtn = () => (
     </button>
   </Link>
 );
+
+export default CloseSearchBtn;
