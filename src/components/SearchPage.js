@@ -26,6 +26,7 @@ class SearchPage extends React.Component {
             if(result.id === book.id) {
               result.shelf = book.shelf;
             }
+            return book;
           })
           return result;
         })
