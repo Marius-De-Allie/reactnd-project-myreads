@@ -11,7 +11,6 @@ class BooksApp extends React.Component {
   }
   // Function for moving book from one shelf to another.
   changeShelf = async(book, shelf) => {
-    console.log(`book: ${book} shelf: ${shelf}`);
     // Update selected book's shelf property to value selected from select list ('currentlyReading', 'wantToRead', 'read' or 'none').
     await BooksAPI.update(book, shelf);
     // Return array of books after shelf property has been updated on selected books.
