@@ -3,6 +3,7 @@ import BookItem from './BookItem';
 
 const BookList = props => {
   let books;
+  // Render currently reading bookshelf books.
   if(props.currentlyReading !== undefined) {
     books = props.currentlyReading.map(book => 
     <BookItem 
@@ -14,6 +15,7 @@ const BookList = props => {
       changeShelf={props.changeShelf}
       book={book}
     />);
+  // Render want to read bookshelf books.
   } else if(props.futureReads !== undefined) {
     books = props.futureReads.map(book => 
       <BookItem
@@ -25,6 +27,7 @@ const BookList = props => {
         changeShelf={props.changeShelf}
         book={book}
       />)
+  // Render previously read bookshelf books.
   } else if(props.previousReads !== undefined) {
     books = props.previousReads.map(book => 
       <BookItem

@@ -12,7 +12,6 @@ const SearchList = (props) => {
         author={result.authors && result.authors}
         imageURL={result.imageLinks && result.imageLinks.thumbnail}
         shelf={result.shelf}
-        id={result.id}
         books={props.books}
         result={result}
         changeShelfSearch={props.changeShelfSearch}

@@ -17,5 +17,5 @@ const SearchBookShelfChanger = props => {
     </div>
   );
 };
-// Call withRouter higher order function passing in this component so that we can access the History object of the component.
+
 export default SearchBookShelfChanger;

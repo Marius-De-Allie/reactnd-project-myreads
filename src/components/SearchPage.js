@@ -33,8 +33,6 @@ class SearchPage extends React.Component {
         this.setState(() => ({
           searchResult
         }));
-      console.log(searchResult);
-      // console.log(this.state.searchResults);
     } else {
       this.setState(() => ({
         error: 'No results please try another search term'

@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 const AddBookBtn = () => {
   return (
     <div className="open-search">
+      {/* Link to search page route */}
       <Link to="/search">
         <button>Add a book</button>
       </Link>

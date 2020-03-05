@@ -1,4 +1,5 @@
 import React from 'react';
+// IMPORT BOOK LIST COMPONENT INTO PREVIOUS READ BOOK LIST.
 import BookList from './BookList';
 
 const PrevReadList = ({previousBooks, changeShelf, title}) => {

@@ -14,8 +14,8 @@ const BookItem = props => {
               book={props.book}
             />
           </div>
-  <div className="book-title">{props.title}</div>
-  <div className="book-authors">{props.author}</div>
+          <div className="book-title">{props.title}</div>
+          <div className="book-authors">{props.author}</div>
       </div>
     </li>
   );
