@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css'
 import SearchPage from './components/SearchPage'
 import MainPage from './components/MainPage';
+import NotFoundPage from './components/NotFoundPage';
 
 class BooksApp extends React.Component {
   state = {
