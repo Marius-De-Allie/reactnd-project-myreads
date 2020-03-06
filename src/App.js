@@ -42,6 +42,8 @@ class BooksApp extends React.Component {
             changeShelfSearch={this.changeShelf}
           />} 
           />
+          {/*404 page not found route*/}
+          <Route />
         </Switch>
       </div>
     )
