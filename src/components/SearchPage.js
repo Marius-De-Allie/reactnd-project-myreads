@@ -15,7 +15,7 @@ class SearchPage extends React.Component {
   // Function for making Async search request to BooksAPI.
   searchSubmit = async(query) => {
     const searchResult = await BooksAPI.search(query);
-    // Check whether serach result array exists.
+    // Check whether search result array exists.
     if(searchResult.error !== 'empty query') {
         // Loop through search results and compare each result's id property to the each book in books array id property. 
         searchResult.forEach(result => result.shelf = 'none');
@@ -34,9 +34,11 @@ class SearchPage extends React.Component {
         this.setState(() => ({
           searchResult
         }));
+        // If searhc results comes back empty then set error state to string value and reset searchResult state property to an empty array.
     } else {
       this.setState(() => ({
-        error: 'No results please try another search term'
+        error: 'No results please try another search term',
+        searchResult: []
       }));
     }
   };
