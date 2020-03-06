@@ -9,7 +9,7 @@ const SearchList = (props) => {
       <SearchBookItem
         key={result.id} 
         title={result.title}
-        author={result.authors && result.authors}
+        author={result.authors && result.authors.join(', ')}
         imageURL={result.imageLinks && result.imageLinks.thumbnail}
         shelf={result.shelf}
         books={props.books}
