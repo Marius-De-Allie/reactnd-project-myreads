@@ -44,7 +44,7 @@ class BooksApp extends React.Component {
           />} 
           />
           {/*404 page not found route*/}
-          <Route />
+          <Route component={NotFoundPage} />
         </Switch>
       </div>
     )
